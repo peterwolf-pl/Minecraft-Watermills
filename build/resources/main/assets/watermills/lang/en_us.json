@@ -1,0 +1,6 @@
+{
+	"block.watermills.watermill": "Watermill",
+	"block.watermills.drive_shaft": "Drive Shaft",
+	"block.watermills.gearbox": "Gearbox",
+	"tooltip.watermills.mechanical_powered": "Debug: boolean mechanical_powered updates from water and shaft connections."
+}
