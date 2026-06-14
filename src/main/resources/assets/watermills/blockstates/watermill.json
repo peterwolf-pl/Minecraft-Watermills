@@ -1,0 +1,20 @@
+{
+	"variants": {
+		"facing=north,mechanical_powered=false,powered=false": { "model": "watermills:block/watermill" },
+		"facing=north,mechanical_powered=false,powered=true": { "model": "watermills:block/watermill_powered" },
+		"facing=north,mechanical_powered=true,powered=false": { "model": "watermills:block/watermill_powered" },
+		"facing=north,mechanical_powered=true,powered=true": { "model": "watermills:block/watermill_powered" },
+		"facing=east,mechanical_powered=false,powered=false": { "model": "watermills:block/watermill", "y": 90 },
+		"facing=east,mechanical_powered=false,powered=true": { "model": "watermills:block/watermill_powered", "y": 90 },
+		"facing=east,mechanical_powered=true,powered=false": { "model": "watermills:block/watermill_powered", "y": 90 },
+		"facing=east,mechanical_powered=true,powered=true": { "model": "watermills:block/watermill_powered", "y": 90 },
+		"facing=south,mechanical_powered=false,powered=false": { "model": "watermills:block/watermill", "y": 180 },
+		"facing=south,mechanical_powered=false,powered=true": { "model": "watermills:block/watermill_powered", "y": 180 },
+		"facing=south,mechanical_powered=true,powered=false": { "model": "watermills:block/watermill_powered", "y": 180 },
+		"facing=south,mechanical_powered=true,powered=true": { "model": "watermills:block/watermill_powered", "y": 180 },
+		"facing=west,mechanical_powered=false,powered=false": { "model": "watermills:block/watermill", "y": 270 },
+		"facing=west,mechanical_powered=false,powered=true": { "model": "watermills:block/watermill_powered", "y": 270 },
+		"facing=west,mechanical_powered=true,powered=false": { "model": "watermills:block/watermill_powered", "y": 270 },
+		"facing=west,mechanical_powered=true,powered=true": { "model": "watermills:block/watermill_powered", "y": 270 }
+	}
+}

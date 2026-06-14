@@ -1,0 +1,23 @@
+{
+	"schemaVersion": 1,
+	"id": "watermills",
+	"version": "${version}",
+	"name": "Watermills",
+	"description": "Adds a minimal mechanical water power system with watermills, drive shafts, and gearboxes.",
+	"authors": [
+		"Peter Wolf"
+	],
+	"license": "CC0-1.0",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.peterwolf.watermills.WatermillsMod"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": ">=0.150.0+26.1.2"
+	}
+}
