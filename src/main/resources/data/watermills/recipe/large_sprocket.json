@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CCC",
+		"CPC",
+		"CCC"
+	],
+	"key": {
+		"C": "minecraft:iron_chain",
+		"P": "minecraft:oak_planks"
+	},
+	"result": {
+		"id": "watermills:large_sprocket",
+		"count": 1
+	}
+}

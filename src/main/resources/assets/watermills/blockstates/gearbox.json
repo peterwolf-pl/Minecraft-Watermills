@@ -1,16 +1,212 @@
 {
 	"variants": {
-		"facing=down,mechanical_powered=false": { "model": "watermills:block/gearbox" },
-		"facing=down,mechanical_powered=true": { "model": "watermills:block/gearbox_powered" },
-		"facing=up,mechanical_powered=false": { "model": "watermills:block/gearbox", "x": 180 },
-		"facing=up,mechanical_powered=true": { "model": "watermills:block/gearbox_powered", "x": 180 },
-		"facing=north,mechanical_powered=false": { "model": "watermills:block/gearbox", "x": 90 },
-		"facing=north,mechanical_powered=true": { "model": "watermills:block/gearbox_powered", "x": 90 },
-		"facing=south,mechanical_powered=false": { "model": "watermills:block/gearbox", "x": 90, "y": 180 },
-		"facing=south,mechanical_powered=true": { "model": "watermills:block/gearbox_powered", "x": 90, "y": 180 },
-		"facing=west,mechanical_powered=false": { "model": "watermills:block/gearbox", "x": 90, "y": 270 },
-		"facing=west,mechanical_powered=true": { "model": "watermills:block/gearbox_powered", "x": 90, "y": 270 },
-		"facing=east,mechanical_powered=false": { "model": "watermills:block/gearbox", "x": 90, "y": 90 },
-		"facing=east,mechanical_powered=true": { "model": "watermills:block/gearbox_powered", "x": 90, "y": 90 }
+		"facing=down,mechanical_powered=false,speed=0": {
+			"model": "watermills:block/gearbox"
+		},
+		"facing=down,mechanical_powered=false,speed=1": {
+			"model": "watermills:block/gearbox"
+		},
+		"facing=down,mechanical_powered=false,speed=2": {
+			"model": "watermills:block/gearbox"
+		},
+		"facing=down,mechanical_powered=false,speed=3": {
+			"model": "watermills:block/gearbox"
+		},
+		"facing=down,mechanical_powered=true,speed=0": {
+			"model": "watermills:block/gearbox_powered"
+		},
+		"facing=down,mechanical_powered=true,speed=1": {
+			"model": "watermills:block/gearbox_powered"
+		},
+		"facing=down,mechanical_powered=true,speed=2": {
+			"model": "watermills:block/gearbox_powered"
+		},
+		"facing=down,mechanical_powered=true,speed=3": {
+			"model": "watermills:block/gearbox_powered"
+		},
+		"facing=up,mechanical_powered=false,speed=0": {
+			"model": "watermills:block/gearbox",
+			"x": 180
+		},
+		"facing=up,mechanical_powered=false,speed=1": {
+			"model": "watermills:block/gearbox",
+			"x": 180
+		},
+		"facing=up,mechanical_powered=false,speed=2": {
+			"model": "watermills:block/gearbox",
+			"x": 180
+		},
+		"facing=up,mechanical_powered=false,speed=3": {
+			"model": "watermills:block/gearbox",
+			"x": 180
+		},
+		"facing=up,mechanical_powered=true,speed=0": {
+			"model": "watermills:block/gearbox_powered",
+			"x": 180
+		},
+		"facing=up,mechanical_powered=true,speed=1": {
+			"model": "watermills:block/gearbox_powered",
+			"x": 180
+		},
+		"facing=up,mechanical_powered=true,speed=2": {
+			"model": "watermills:block/gearbox_powered",
+			"x": 180
+		},
+		"facing=up,mechanical_powered=true,speed=3": {
+			"model": "watermills:block/gearbox_powered",
+			"x": 180
+		},
+		"facing=north,mechanical_powered=false,speed=0": {
+			"model": "watermills:block/gearbox",
+			"x": 90
+		},
+		"facing=north,mechanical_powered=false,speed=1": {
+			"model": "watermills:block/gearbox",
+			"x": 90
+		},
+		"facing=north,mechanical_powered=false,speed=2": {
+			"model": "watermills:block/gearbox",
+			"x": 90
+		},
+		"facing=north,mechanical_powered=false,speed=3": {
+			"model": "watermills:block/gearbox",
+			"x": 90
+		},
+		"facing=north,mechanical_powered=true,speed=0": {
+			"model": "watermills:block/gearbox_powered",
+			"x": 90
+		},
+		"facing=north,mechanical_powered=true,speed=1": {
+			"model": "watermills:block/gearbox_powered",
+			"x": 90
+		},
+		"facing=north,mechanical_powered=true,speed=2": {
+			"model": "watermills:block/gearbox_powered",
+			"x": 90
+		},
+		"facing=north,mechanical_powered=true,speed=3": {
+			"model": "watermills:block/gearbox_powered",
+			"x": 90
+		},
+		"facing=south,mechanical_powered=false,speed=0": {
+			"model": "watermills:block/gearbox",
+			"x": 90,
+			"y": 180
+		},
+		"facing=south,mechanical_powered=false,speed=1": {
+			"model": "watermills:block/gearbox",
+			"x": 90,
+			"y": 180
+		},
+		"facing=south,mechanical_powered=false,speed=2": {
+			"model": "watermills:block/gearbox",
+			"x": 90,
+			"y": 180
+		},
+		"facing=south,mechanical_powered=false,speed=3": {
+			"model": "watermills:block/gearbox",
+			"x": 90,
+			"y": 180
+		},
+		"facing=south,mechanical_powered=true,speed=0": {
+			"model": "watermills:block/gearbox_powered",
+			"x": 90,
+			"y": 180
+		},
+		"facing=south,mechanical_powered=true,speed=1": {
+			"model": "watermills:block/gearbox_powered",
+			"x": 90,
+			"y": 180
+		},
+		"facing=south,mechanical_powered=true,speed=2": {
+			"model": "watermills:block/gearbox_powered",
+			"x": 90,
+			"y": 180
+		},
+		"facing=south,mechanical_powered=true,speed=3": {
+			"model": "watermills:block/gearbox_powered",
+			"x": 90,
+			"y": 180
+		},
+		"facing=west,mechanical_powered=false,speed=0": {
+			"model": "watermills:block/gearbox",
+			"x": 90,
+			"y": 270
+		},
+		"facing=west,mechanical_powered=false,speed=1": {
+			"model": "watermills:block/gearbox",
+			"x": 90,
+			"y": 270
+		},
+		"facing=west,mechanical_powered=false,speed=2": {
+			"model": "watermills:block/gearbox",
+			"x": 90,
+			"y": 270
+		},
+		"facing=west,mechanical_powered=false,speed=3": {
+			"model": "watermills:block/gearbox",
+			"x": 90,
+			"y": 270
+		},
+		"facing=west,mechanical_powered=true,speed=0": {
+			"model": "watermills:block/gearbox_powered",
+			"x": 90,
+			"y": 270
+		},
+		"facing=west,mechanical_powered=true,speed=1": {
+			"model": "watermills:block/gearbox_powered",
+			"x": 90,
+			"y": 270
+		},
+		"facing=west,mechanical_powered=true,speed=2": {
+			"model": "watermills:block/gearbox_powered",
+			"x": 90,
+			"y": 270
+		},
+		"facing=west,mechanical_powered=true,speed=3": {
+			"model": "watermills:block/gearbox_powered",
+			"x": 90,
+			"y": 270
+		},
+		"facing=east,mechanical_powered=false,speed=0": {
+			"model": "watermills:block/gearbox",
+			"x": 90,
+			"y": 90
+		},
+		"facing=east,mechanical_powered=false,speed=1": {
+			"model": "watermills:block/gearbox",
+			"x": 90,
+			"y": 90
+		},
+		"facing=east,mechanical_powered=false,speed=2": {
+			"model": "watermills:block/gearbox",
+			"x": 90,
+			"y": 90
+		},
+		"facing=east,mechanical_powered=false,speed=3": {
+			"model": "watermills:block/gearbox",
+			"x": 90,
+			"y": 90
+		},
+		"facing=east,mechanical_powered=true,speed=0": {
+			"model": "watermills:block/gearbox_powered",
+			"x": 90,
+			"y": 90
+		},
+		"facing=east,mechanical_powered=true,speed=1": {
+			"model": "watermills:block/gearbox_powered",
+			"x": 90,
+			"y": 90
+		},
+		"facing=east,mechanical_powered=true,speed=2": {
+			"model": "watermills:block/gearbox_powered",
+			"x": 90,
+			"y": 90
+		},
+		"facing=east,mechanical_powered=true,speed=3": {
+			"model": "watermills:block/gearbox_powered",
+			"x": 90,
+			"y": 90
+		}
 	}
 }

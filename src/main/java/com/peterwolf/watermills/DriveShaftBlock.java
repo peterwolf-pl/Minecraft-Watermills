@@ -24,7 +24,8 @@ public class DriveShaftBlock extends Block {
 		super(properties);
 		this.registerDefaultState(this.stateDefinition.any()
 			.setValue(AXIS, Direction.Axis.X)
-			.setValue(MechanicalProperties.MECHANICAL_POWERED, false));
+			.setValue(MechanicalProperties.MECHANICAL_POWERED, false)
+			.setValue(MechanicalProperties.SPEED, 0));
 	}
 
 	@Override
@@ -56,40 +57,19 @@ public class DriveShaftBlock extends Block {
 
 	@Override
 	protected void tick(final BlockState state, final ServerLevel level, final BlockPos pos, final RandomSource random) {
-		boolean powered = hasMechanicalInput(level, pos, state);
-		if (powered != state.getValue(MechanicalProperties.MECHANICAL_POWERED)) {
-			WatermillsMod.LOGGER.info("Drive shaft at {} {}", pos, powered ? "received drive" : "lost drive");
-			level.setBlock(pos, state.setValue(MechanicalProperties.MECHANICAL_POWERED, powered), Block.UPDATE_ALL);
+		MechanicalPower power = MechanicalNetwork.resolvePower(level, pos, state);
+		if (power.powered() != state.getValue(MechanicalProperties.MECHANICAL_POWERED)
+			|| power.speed() != state.getValue(MechanicalProperties.SPEED)) {
+			WatermillsMod.LOGGER.info("Drive shaft at {} {}", pos, power.powered() ? "received drive speed " + power.speed() : "lost drive");
+			level.setBlock(
+				pos,
+				state.setValue(MechanicalProperties.MECHANICAL_POWERED, power.powered()).setValue(MechanicalProperties.SPEED, power.speed()),
+				Block.UPDATE_ALL
+			);
 			MechanicalNetwork.scheduleMechanicalNeighbors(level, pos);
 		}
 
 		level.scheduleTick(pos, this, MechanicalNetwork.UPDATE_DELAY);
-	}
-
-	private static boolean hasMechanicalInput(final ServerLevel level, final BlockPos pos, final BlockState state) {
-		Direction.Axis axis = state.getValue(AXIS);
-		for (Direction direction : Direction.values()) {
-			if (direction.getAxis() != axis) {
-				continue;
-			}
-
-			BlockState neighborState = level.getBlockState(pos.relative(direction));
-			if (neighborState.getBlock() instanceof WatermillBlock && MechanicalNetwork.isPowered(neighborState)) {
-				return true;
-			}
-
-			if (neighborState.getBlock() instanceof DriveShaftBlock
-				&& neighborState.getValue(AXIS) == axis
-				&& MechanicalNetwork.isPowered(neighborState)) {
-				return true;
-			}
-
-			if (neighborState.getBlock() instanceof GearboxBlock && MechanicalNetwork.isPowered(neighborState)) {
-				return true;
-			}
-		}
-
-		return false;
 	}
 
 	@Override
@@ -108,6 +88,6 @@ public class DriveShaftBlock extends Block {
 
 	@Override
 	protected void createBlockStateDefinition(final StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(AXIS, MechanicalProperties.MECHANICAL_POWERED);
+		builder.add(AXIS, MechanicalProperties.MECHANICAL_POWERED, MechanicalProperties.SPEED);
 	}
 }

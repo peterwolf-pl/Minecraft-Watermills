@@ -1,6 +1,0 @@
-{
-	"block.watermills.watermill": "Kolo wodne",
-	"block.watermills.drive_shaft": "Wal napedowy",
-	"block.watermills.gearbox": "Przekladnia",
-	"tooltip.watermills.mechanical_powered": "Debug: boolean mechanical_powered odswieza sie z wody i polaczen walow."
-}

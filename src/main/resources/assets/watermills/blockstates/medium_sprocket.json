@@ -1,99 +1,99 @@
 {
 	"variants": {
 		"axis=x,mechanical_powered=false,speed=0": {
-			"model": "watermills:block/drive_shaft",
+			"model": "watermills:block/medium_sprocket",
 			"x": 90,
 			"y": 90
 		},
 		"axis=x,mechanical_powered=false,speed=1": {
-			"model": "watermills:block/drive_shaft",
+			"model": "watermills:block/medium_sprocket",
 			"x": 90,
 			"y": 90
 		},
 		"axis=x,mechanical_powered=false,speed=2": {
-			"model": "watermills:block/drive_shaft",
+			"model": "watermills:block/medium_sprocket",
 			"x": 90,
 			"y": 90
 		},
 		"axis=x,mechanical_powered=false,speed=3": {
-			"model": "watermills:block/drive_shaft",
+			"model": "watermills:block/medium_sprocket",
 			"x": 90,
 			"y": 90
 		},
 		"axis=x,mechanical_powered=true,speed=0": {
-			"model": "watermills:block/drive_shaft_powered",
+			"model": "watermills:block/medium_sprocket_powered",
 			"x": 90,
 			"y": 90
 		},
 		"axis=x,mechanical_powered=true,speed=1": {
-			"model": "watermills:block/drive_shaft_powered",
+			"model": "watermills:block/medium_sprocket_powered",
 			"x": 90,
 			"y": 90
 		},
 		"axis=x,mechanical_powered=true,speed=2": {
-			"model": "watermills:block/drive_shaft_powered",
+			"model": "watermills:block/medium_sprocket_powered",
 			"x": 90,
 			"y": 90
 		},
 		"axis=x,mechanical_powered=true,speed=3": {
-			"model": "watermills:block/drive_shaft_powered",
+			"model": "watermills:block/medium_sprocket_powered",
 			"x": 90,
 			"y": 90
 		},
 		"axis=y,mechanical_powered=false,speed=0": {
-			"model": "watermills:block/drive_shaft"
+			"model": "watermills:block/medium_sprocket"
 		},
 		"axis=y,mechanical_powered=false,speed=1": {
-			"model": "watermills:block/drive_shaft"
+			"model": "watermills:block/medium_sprocket"
 		},
 		"axis=y,mechanical_powered=false,speed=2": {
-			"model": "watermills:block/drive_shaft"
+			"model": "watermills:block/medium_sprocket"
 		},
 		"axis=y,mechanical_powered=false,speed=3": {
-			"model": "watermills:block/drive_shaft"
+			"model": "watermills:block/medium_sprocket"
 		},
 		"axis=y,mechanical_powered=true,speed=0": {
-			"model": "watermills:block/drive_shaft_powered"
+			"model": "watermills:block/medium_sprocket_powered"
 		},
 		"axis=y,mechanical_powered=true,speed=1": {
-			"model": "watermills:block/drive_shaft_powered"
+			"model": "watermills:block/medium_sprocket_powered"
 		},
 		"axis=y,mechanical_powered=true,speed=2": {
-			"model": "watermills:block/drive_shaft_powered"
+			"model": "watermills:block/medium_sprocket_powered"
 		},
 		"axis=y,mechanical_powered=true,speed=3": {
-			"model": "watermills:block/drive_shaft_powered"
+			"model": "watermills:block/medium_sprocket_powered"
 		},
 		"axis=z,mechanical_powered=false,speed=0": {
-			"model": "watermills:block/drive_shaft",
+			"model": "watermills:block/medium_sprocket",
 			"x": 90
 		},
 		"axis=z,mechanical_powered=false,speed=1": {
-			"model": "watermills:block/drive_shaft",
+			"model": "watermills:block/medium_sprocket",
 			"x": 90
 		},
 		"axis=z,mechanical_powered=false,speed=2": {
-			"model": "watermills:block/drive_shaft",
+			"model": "watermills:block/medium_sprocket",
 			"x": 90
 		},
 		"axis=z,mechanical_powered=false,speed=3": {
-			"model": "watermills:block/drive_shaft",
+			"model": "watermills:block/medium_sprocket",
 			"x": 90
 		},
 		"axis=z,mechanical_powered=true,speed=0": {
-			"model": "watermills:block/drive_shaft_powered",
+			"model": "watermills:block/medium_sprocket_powered",
 			"x": 90
 		},
 		"axis=z,mechanical_powered=true,speed=1": {
-			"model": "watermills:block/drive_shaft_powered",
+			"model": "watermills:block/medium_sprocket_powered",
 			"x": 90
 		},
 		"axis=z,mechanical_powered=true,speed=2": {
-			"model": "watermills:block/drive_shaft_powered",
+			"model": "watermills:block/medium_sprocket_powered",
 			"x": 90
 		},
 		"axis=z,mechanical_powered=true,speed=3": {
-			"model": "watermills:block/drive_shaft_powered",
+			"model": "watermills:block/medium_sprocket_powered",
 			"x": 90
 		}
 	}

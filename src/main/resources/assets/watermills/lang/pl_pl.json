@@ -2,5 +2,8 @@
 	"block.watermills.watermill": "Kolo wodne",
 	"block.watermills.drive_shaft": "Wal napedowy",
 	"block.watermills.gearbox": "Przekladnia",
-	"tooltip.watermills.mechanical_powered": "Debug: boolean mechanical_powered odswieza sie z wody i polaczen walow."
+	"block.watermills.small_sprocket": "Mala zebatka lancuchowa",
+	"block.watermills.medium_sprocket": "Srednia zebatka lancuchowa",
+	"block.watermills.large_sprocket": "Duza zebatka lancuchowa",
+	"tooltip.watermills.mechanical_powered": "Debug: mechanical_powered i speed odswiezaja sie z wody, walow, przekladni i zebatek na iron-chain."
 }

@@ -35,7 +35,22 @@ public class WatermillsMod implements ModInitializer {
 	);
 	public static final GearboxBlock GEARBOX = registerBlock(
 		"gearbox",
-		key -> new GearboxBlock(baseWoodProperties(key).dynamicShape()),
+		key -> new GearboxBlock(baseStoneProperties(key).dynamicShape()),
+		MechanicalBlockItem::new
+	);
+	public static final SprocketBlock SMALL_SPROCKET = registerBlock(
+		"small_sprocket",
+		key -> new SprocketBlock(SprocketSize.SMALL, baseWoodProperties(key).noOcclusion().dynamicShape()),
+		MechanicalBlockItem::new
+	);
+	public static final SprocketBlock MEDIUM_SPROCKET = registerBlock(
+		"medium_sprocket",
+		key -> new SprocketBlock(SprocketSize.MEDIUM, baseWoodProperties(key).noOcclusion().dynamicShape()),
+		MechanicalBlockItem::new
+	);
+	public static final SprocketBlock LARGE_SPROCKET = registerBlock(
+		"large_sprocket",
+		key -> new SprocketBlock(SprocketSize.LARGE, baseWoodProperties(key).noOcclusion().dynamicShape()),
 		MechanicalBlockItem::new
 	);
 
@@ -45,6 +60,9 @@ public class WatermillsMod implements ModInitializer {
 			output.accept(WATERMILL);
 			output.accept(DRIVE_SHAFT);
 			output.accept(GEARBOX);
+			output.accept(SMALL_SPROCKET);
+			output.accept(MEDIUM_SPROCKET);
+			output.accept(LARGE_SPROCKET);
 		});
 		LOGGER.info("Watermills initialized");
 	}
@@ -58,6 +76,13 @@ public class WatermillsMod implements ModInitializer {
 			.setId(key)
 			.sound(SoundType.WOOD)
 			.strength(2.0F, 3.0F);
+	}
+
+	private static BlockBehaviour.Properties baseStoneProperties(final ResourceKey<Block> key) {
+		return BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
+			.setId(key)
+			.sound(SoundType.STONE)
+			.strength(3.0F, 6.0F);
 	}
 
 	private static <T extends Block> T registerBlock(

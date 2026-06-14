@@ -2,5 +2,8 @@
 	"block.watermills.watermill": "Watermill",
 	"block.watermills.drive_shaft": "Drive Shaft",
 	"block.watermills.gearbox": "Gearbox",
-	"tooltip.watermills.mechanical_powered": "Debug: boolean mechanical_powered updates from water and shaft connections."
+	"block.watermills.small_sprocket": "Small Chain Sprocket",
+	"block.watermills.medium_sprocket": "Medium Chain Sprocket",
+	"block.watermills.large_sprocket": "Large Chain Sprocket",
+	"tooltip.watermills.mechanical_powered": "Debug: mechanical_powered and speed update from water, shafts, gearboxes, and iron-chain sprockets."
 }

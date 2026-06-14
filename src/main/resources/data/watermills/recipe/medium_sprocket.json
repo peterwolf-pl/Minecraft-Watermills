@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" C ",
+		"CSC",
+		" C "
+	],
+	"key": {
+		"C": "minecraft:iron_chain",
+		"S": "watermills:drive_shaft"
+	},
+	"result": {
+		"id": "watermills:medium_sprocket",
+		"count": 1
+	}
+}
